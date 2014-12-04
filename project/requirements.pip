@@ -1,0 +1,21 @@
+# BASE
+Django>=1.6,<1.7
+Pillow
+South
+django-braces
+djangorestframework-camel-case==0.1.0
+djangorestframework==2.3.12
+psycopg2
+sorl-thumbnail 
+unipath
+requests
+
+#DEV
+Fabric
+
+# TEST
+factory_boy 
+WebTest
+django-webtest 
+django_nose
+ipdb

@@ -1,0 +1,109 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Profile app</title>
+  <link rel="stylesheet" href="{% static 'components/bootstrap/dist/css/bootstrap.css' %}">
+  <link rel="stylesheet" href="{% static 'components/choosen/chosen.css' %}">
+  <link rel="stylesheet" href="{% static 'css/base.css' %}">
+</head>
+<body>
+    <div class="container">
+        <div class="row h-mt-25 h-mb-15">
+            <div class="col-md-7 col-md-offset-3">
+                <div class="h-ml-15 h-mr-15">
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-2 col-md-offset-1">
+            </div>
+            <div class="col-md-7">
+                <div class="main-content clearfix h-mb-25">
+                    
+                    <div class="row h-mb-25 bb-row h-pb-40">
+                        <div class="clearfix h-mb-25">
+                            <div class="col-md-5">
+                                <h3 class="disp-ib">accreditations</h3>
+                                <i class="text-muted h-ml-10">select</i>
+                            </div>
+                            <div class="col-md-7 settings-control h-mt-20">
+                                <span class="h-ml-15 text-muted">complete set</span>
+                                <span class="h-ml-15 text-muted">duplicate set</span>
+                                <span class="h-ml-15 text-muted">delete set</span>
+                            </div>
+                        </div>
+                        <div class="clearfix">
+                            <div class="col-md-6 h-mb-25">
+                                <label class="h-mb-10">
+                                    GMO
+                                    <i class="glyphicon glyphicon-remove pointer pull-right text-muted-light"></i>
+                                </label>
+                                <div class="row">
+                                    <div class="col-md-2 h-pr-0">
+                                        <span class="form-control no-border bg-gray no-shadow text-center">Y</span>
+                                    </div>
+                                    <div class="col-md-10">
+                                        <textarea class="textarea form-control no-border bg-gray" cols="30" rows="5">￼Percent Daily Values based on a 2,000 calorie diet. Your daily values may be higher or lower depending on your calorie needs.</textarea>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 h-mb-25">
+                                <label class="h-mb-10">
+                                    organic
+                                    <i class="glyphicon glyphicon-remove pointer pull-right text-muted-light"></i>
+                                </label>
+                                <div class="row">
+                                    <div class="col-md-2 h-pr-0">
+                                        <span class="form-control no-border bg-gray no-shadow text-center">N</span>
+                                    </div>
+                                    <div class="col-md-10">
+                                        <textarea class="textarea form-control no-border bg-gray" cols="30" rows="5">￼Percent Daily Values based on a 2,000 calorie diet. Your daily values may be higher or lower depending on your calorie needs.</textarea>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="clearfix">
+                            <div class="col-md-6 h-mb-25">
+                                <label class="h-mb-10">
+                                    rainforest alliance
+                                    <i class="glyphicon glyphicon-remove pointer pull-right text-muted-light"></i>
+                                </label>
+                                <div class="row">
+                                    <div class="col-md-2 h-pr-0">
+                                        <span class="form-control no-border bg-gray no-shadow text-center blue-border">Y</span>
+                                    </div>
+                                    <div class="col-md-10">
+                                        <textarea class="textarea form-control no-border bg-gray" cols="30" rows="5"></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 h-mb-25">
+                                <label class="h-mb-10">
+                                    PEFC
+                                    <i class="glyphicon glyphicon-remove pointer pull-right text-muted-light"></i>
+                                </label>
+                                <div class="row">
+                                    <div class="col-md-2 h-pr-0">
+                                        <span class="form-control no-border bg-gray no-shadow text-center red-border">w</span>
+                                    </div>
+                                    <div class="col-md-10">
+                                        <textarea class="textarea form-control no-border bg-gray" cols="30" rows="5"></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="{% static 'components/bootstrap/dist/js/bootstrap.js' %}"></script>
+<script src="{% static 'components/choosen/chosen.jquery.min.js' %}"></script>
+<script src="{% static 'components/bootstrap/js/tab.js' %}"></script>
+<script src="{% static 'js/front.js' %}"></script>
+</html>

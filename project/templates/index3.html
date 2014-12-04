@@ -1,0 +1,417 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Profile app</title>
+  <link rel="stylesheet" href="{% static 'components/bootstrap/dist/css/bootstrap.css' %}">
+  <link rel="stylesheet" href="{% static 'components/choosen/chosen.css' %}">
+  <link rel="stylesheet" href="{% static 'css/base.css' %}">
+</head>
+<body>
+    <div class="container">
+        <div class="row h-mt-25 h-mb-15">
+            <div class="col-md-7 col-md-offset-3">
+                <div class="h-ml-15 h-mr-15">
+                    <input type="email" class="form-control main-search" id="exampleInputEmail1" placeholder="magic field genie">
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-2 col-md-offset-1">
+                <div class="row h-mb-20">
+                    <ul class="nav nav-tabs sidebar-tabs">
+                        <li><a href="#sets">sets</a></li>
+                        <li><a href="#types">types</a></li>
+                        <li class="active"><a href="#singles">singles</a></li>
+                    </ul>
+                </div>
+                <div class="row h-mb-25">
+                    <div class="tab-content sidebar-table">
+                        <div class="tab-pane" id="sets">
+                            <div class="h-mb-15">
+                                <input class="form-control no-border input-xs" type="text">
+                            </div>
+                            <div class="table h-mb-10">
+                                <div class="table-cell">
+                                    <strong>dimensions</strong>
+                                    <ul>
+                                        <li>height</li>
+                                        <li>length</li>
+                                        <li>width</li>
+                                        <li>depth</li>
+                                    </ul>
+                                </div>
+                                <div class="table-cell">
+                                    <strong>daily value %</strong>
+                                    <ul>
+                                        <li>total fat</li>
+                                        <li>saturated fat</li>
+                                        <li>cholesterol</li>
+                                        <li>sodium</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="table h-mb-10">
+                                <div class="table-cell">
+                                    <strong>dimensions</strong>
+                                    <ul>
+                                        <li>height</li>
+                                        <li>length</li>
+                                        <li>width</li>
+                                        <li>depth</li>
+                                    </ul>
+                                </div>
+                                <div class="table-cell">
+                                    <strong>daily value %</strong>
+                                    <ul>
+                                        <li>total fat</li>
+                                        <li>saturated fat</li>
+                                        <li>cholesterol</li>
+                                        <li>sodium</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="table h-mb-10">
+                                <div class="table-cell">
+                                    <strong>dimensions</strong>
+                                    <ul>
+                                        <li>height</li>
+                                        <li>length</li>
+                                        <li>width</li>
+                                        <li>depth</li>
+                                    </ul>
+                                </div>
+                                <div class="table-cell">
+                                    <strong>daily value %</strong>
+                                    <ul>
+                                        <li>total fat</li>
+                                        <li>saturated fat</li>
+                                        <li>cholesterol</li>
+                                        <li>sodium</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="table h-mb-10">
+                                <div class="table-cell">
+                                    <strong>dimensions</strong>
+                                    <ul>
+                                        <li>height</li>
+                                        <li>length</li>
+                                        <li>width</li>
+                                        <li>depth</li>
+                                    </ul>
+                                </div>
+                                <div class="table-cell">
+                                    <strong>daily value %</strong>
+                                    <ul>
+                                        <li>total fat</li>
+                                        <li>saturated fat</li>
+                                        <li>cholesterol</li>
+                                        <li>sodium</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane" id="types">2</div>
+                        <div class="tab-pane active" id="singles">
+                            <div class="h-mb-10">
+                                <input class="form-control no-border input-sm" type="text" value="width">
+                            </div>
+                            <div class="h-mb-10">
+                                <input class="form-control no-border bg-gray input-sm" type="text" value="width">
+                            </div>
+                            <div class="h-mb-10">
+                                <input class="form-control no-border bg-gray input-sm" type="text" value="width">
+                            </div>
+                            <div class="h-mb-10">
+                                <input class="form-control no-border bg-gray input-sm" type="text" value="width">
+                            </div>
+                            <div class="h-mb-10">
+                                <input class="form-control no-border bg-gray input-sm" type="text" value="width">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-7">
+                <div class="main-content clearfix h-mb-25">
+                    <div class="row h-mb-15">
+                        <div class="col-md-12">
+                            <span class="h-mr-20">GTIN: 00884912105318</span>
+                            <span class="h-mr-20">Manufacturer: POST FOODS</span>
+                            <span class="h-mr-20">Brand: GRAPE-NUTS</span>
+                        </div>
+                    </div>
+                    <div class="row h-mb-25 bb-row">
+                        <div class="col-md-12">
+                            <form class="form-inline row" role="form">
+                                <div class="clearfix h-mb-10">
+                                    <label class="col-md-2 pull-left h-mt-5 h-pr-0 text-right" for="input">GS1 GPC:</label>
+                                    <div class="col-md-3">
+                                        <div class="input-group input-group-xs">
+                                            <span class="input-group-addon bg-white">
+                                                <i class="glyphicon glyphicon-pencil"></i>
+                                            </span>
+                                            <input type="text" class="form-control no-border bg-gray" id="input">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="clearfix h-mb-10">
+                                    <label class="col-md-2 pull-left h-mt-5 h-pr-0 text-right" for="input1">Legacy GPC:</label>
+                                    <div class="col-md-3">
+                                        <div class="input-group input-group-xs">
+                                            <span class="input-group-addon bg-white">
+                                                <i class="glyphicon glyphicon-pencil"></i>
+                                            </span>
+                                            <input type="text" class="form-control no-border bg-gray" id="input1">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="clearfix h-mb-15">
+                                    <label class="col-md-2 pull-left h-mt-5 h-pr-0 text-right" for="input2">WalMart GPC:</label>
+                                    <div class="col-md-3">
+                                        <div class="input-group input-group-xs">
+                                            <span class="input-group-addon bg-white">
+                                                <i class="glyphicon glyphicon-pencil"></i>
+                                            </span>
+                                            <input type="text" class="form-control no-border bg-gray" id="input2">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="clearfix h-mb-15">
+                                    <div class="col-md-6">
+                                        <select class="chosen-select blue-chosen">
+                                            <option value="1">Target Market - Variant - Component</option>
+                                            <option value="2">Variant</option>
+                                            <option value="3">Component</option>
+                                        </select>
+                                    </div>
+                                    <div class="row col-md-3 h-mt-5 pointer text-muted">add profile</div>
+                                </div>
+                                <div class="clearfix">
+                                    <div class="col-md-6">
+                                        <span class="h-mr-20 pointer text-muted-dark">select all</span>
+                                        <span class="h-mr-20 pointer text-muted">deselect all</span>
+                                        <span class="h-mr-20 pointer text-muted">duplicate selected</span>
+                                    </div>
+                                    <div class="col-md-6 text-right">
+                                        <span class="pointer text-muted-dark">import sets</span>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="row h-mb-25 bb-row h-pb-40">
+                        <div class="clearfix">
+                            <div class="col-md-6">
+                                <h3 class="disp-ib">dimensions</h3>
+                                <i class="text-muted h-ml-5">select</i>
+                            </div>
+                            <div class="col-md-6 h-mt-20 settings-control-default">
+                                <span class="settings-control active">
+
+                                  <!-- LANGUAGE POPUP START -->
+                                    <div class="text-tooltip language-popup arrow-up">
+                                      <div class="row h-mb-15">
+                                        <div class="col-md-12 h-mb-10 text-muted">add new language</div>
+                                        <div class="col-md-9">
+                                          <input class="form-control no-border input-xxs" type="text">
+                                        </div>
+                                        <div class="col-md-3 h-pl-0">
+                                          <button class="btn btn-small bg-gray btn-default">add</button>
+                                        </div>
+                                      </div>
+                                      <div class="row border-top h-mb-5">
+                                        <div class="col-md-12 h-mb-10 h-mt-10 text-muted">change language</div>
+                                        <div class="col-md-12">
+                                          <select class="chosen-select chosen-small gray-chosen big-arrow">
+                                            <option value="1">english (en)</option>
+                                            <option value="2">english (us)</option>
+                                          </select>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  <!-- LANGUAGE POPUP START -->
+
+                                </span>
+                                <span class="h-ml-15">complete set</span>
+                                <span class="h-ml-15">duplicate set</span>
+                                <span class="h-ml-15">delete set</span>
+                            </div>
+                        </div>
+                        <div class="col-md-4 h-pr-0">
+                           <div class="row h-mt-15">
+                               <div class="col-md-7">
+                                    <label class="h-mb-10">height</label>
+                                    <input type="text" class="form-control no-border bg-gray input-xs" value="12.6">
+                               </div>
+                               <div class="col-md-5 row">
+                                    <div class="clearfix h-mb-15 text-muted-lignt">
+                                        <i class="glyphicon glyphicon-plus pointer pull-left"></i>
+                                        <i class="glyphicon glyphicon-remove pointer pull-right"></i>
+                                    </div>
+                                    <select class="chosen-select gray-chosen">
+                                        <option value="1">in</option>
+                                        <option value="2">out</option>
+                                    </select>
+                               </div>
+                           </div>
+                        </div>
+                        <div class="col-md-4 h-pr-0">
+                           <div class="row h-mt-15">
+                               <div class="col-md-7">
+                                    <label class="h-mb-10">width</label>
+                                    <input type="text" class="form-control no-border bg-gray input-xs" value="7.8">
+                               </div>
+                               <div class="col-md-5 row">
+                                    <div class="clearfix h-mb-15 text-muted-lignt">
+                                        <i class="glyphicon glyphicon-plus pointer pull-left"></i>
+                                        <i class="glyphicon glyphicon-remove pointer pull-right"></i>
+                                    </div>
+                                    <select class="chosen-select gray-chosen">
+                                        <option value="1">in</option>
+                                        <option value="2">out</option>
+                                    </select>
+                               </div>
+                           </div>
+                        </div>
+                        <div class="col-md-4 h-pr-0">
+                           <div class="row h-mt-15">
+                               <div class="col-md-7">
+                                    <label class="h-mb-10">depth</label>
+                                    <input type="text" class="form-control no-border bg-gray input-xs" value="3.8">
+                               </div>
+                               <div class="col-md-5 row">
+                                    <div class="clearfix h-mb-15 text-muted-lignt">
+                                        <i class="glyphicon glyphicon-plus pointer pull-left"></i>
+                                        <i class="glyphicon glyphicon-remove pointer pull-right"></i>
+                                    </div>
+                                    <select class="chosen-select gray-chosen">
+                                        <option value="1">in</option>
+                                        <option value="2">out</option>
+                                    </select>
+                               </div>
+                           </div>
+                        </div>
+                    </div>
+                    <div class="row h-mb-25 bb-row h-pb-40">
+                        <div class="clearfix">
+                            <div class="col-md-6">
+                                <h3 class="disp-ib">fat claims</h3>
+                                <i class="text-muted h-ml-5">select</i>
+                            </div>
+                            <div class="col-md-6 settings-control-default h-mt-20">
+                                <span class="settings-control"></span>
+                                <span class="h-ml-15">complete set</span>
+                                <span class="h-ml-15">duplicate set</span>
+                                <span class="h-ml-15">delete set</span>
+                            </div>
+                        </div>
+                        <div class="col-md-4 h-pr-0">
+                           <div class="h-mr-15 h-mt-15">
+                                <label class="h-mb-10 block">fat free <i class="glyphicon glyphicon-remove pointer pull-right text-muted-lignt"></i></label>
+                                <input type="text" class="form-control no-border bg-gray input-xs">
+                           </div>
+                        </div>
+                        <div class="col-md-4 h-pr-0">
+                           <div class="h-mr-15 h-mt-15">
+                                <label class="h-mb-10 block">low saturated fat <i class="glyphicon glyphicon-remove pointer pull-right text-muted-lignt"></i></label>
+                                <input type="text" class="form-control no-border bg-gray input-xs">
+                           </div>
+                        </div>
+                        <div class="col-md-4 h-pr-0">
+                           <div class="h-mr-15 h-mt-15">
+                                <label class="h-mb-10 block">saturated fat free <i class="glyphicon glyphicon-remove pointer pull-right text-muted-lignt"></i></label>
+                                <input type="text" class="form-control no-border bg-gray input-xs">
+                           </div>
+                        </div>
+                        <div class="col-md-4 h-pr-0">
+                           <div class="h-mr-15 h-mt-15">
+                                <label class="h-mb-10 block">low fat <i class="glyphicon glyphicon-remove pointer pull-right text-muted-lignt"></i></label>
+                                <input type="text" class="form-control no-border bg-gray input-xs">
+                           </div>
+                        </div>
+                    </div>
+
+                    <!-- NEW ALERGENE FIELD START -->
+                    <div class="row h-mb-25 bb-row h-pb-40">
+                        <div class="col-md-6">
+                          <label class="h-mb-10 block">specification agency</label>
+                          <input type="text" class="form-control no-border bg-gray input-xs">
+                        </div>
+                        <div class="col-md-6">
+                          <label class="h-mb-10 block">specification name</label>
+                          <input type="text" class="form-control no-border bg-gray input-xs">
+                        </div>
+                    </div>
+                    <!-- NEW ALERGENE FIELD END -->
+
+                    <!-- ingridient field start -->
+                    <div class="row h-mb-25 bb-row h-pb-40 clearfix">
+                        <div class="clearfix">
+                            <div class="col-md-6">
+                                <h3 class="disp-ib">ingredients</h3>
+                                <i class="text-muted h-ml-5">select</i>
+                            </div>
+                            <div class="col-md-6 settings-control h-mt-20">
+                                <span class="h-ml-15">duplicate set</span>
+                                <span class="h-ml-15">delete set</span>
+                            </div>
+                        </div>
+                        <div class="col-md-12 h-mt-15">
+                          <ul class="list-inline">
+                            <li>ingredients</li>
+                            <li class="text-muted pointer">duplicate</li>
+                            <li class="text-muted pointer">inspect</li>
+                            <li class="text-muted pointer">rich text</li>
+                          </ul>
+                        </div>
+                        <div class="col-md-12 clearfix">
+                          <div class="list-tab-content">
+                            <div contenteditable="true" class="textarea no-border bg-gray textarea-default">Whole Grain Wheat Flour, Malted Barley Flour, Isolated Soy Protein, Salt, Whole Grain Barley Flour, Malt Extract, Dried Yeast. Vitamins and Minerals: Reduced Iron, Niacinamide, Zinc Oxide <em>@(source of Zinc)</em>, Vitamin B6, Thiamin Mononitrate <em>@(Vitamin B1) <div contenteditable="false" class="text-tooltip">
+                              <ul class="tooltip-menu">
+                                <li>organic whey</li>
+                                <li>organic wheat</li>
+                                <li>organic wheat bran</li>
+                              </ul>
+                            </div></em>, Organic Wh</div>
+                          </div>
+                        </div>
+                    </div>
+                    <!-- ingridient field end -->
+                    <div class="row h-mb-10">
+                        <div class="col-md-3 h-pr-30">
+                            <button type="button" class="btn btn-gray btn-small btn-block">save</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <section class="col-md-1 row-left">
+                <nav class="right-sidebar-nav">
+                    <div class="right-sidebar-menu">
+                        <li><a href="#">dimn</a></li>
+                        <li><a href="#">fatc</a></li>
+                        <li><a href="#">glut</a></li>
+                        <li><a href="#">dtry</a></li>
+                        <li><a href="#">accr</a></li>
+                        <li><a href="#">LEGL</a></li>
+                        <li><a href="#">POST</a></li>
+                        <li><a href="#">NUTR</a></li>
+                        <li><a href="#">INGR</a></li>
+                        <li><a href="#">IMARK</a></li>
+                        <li><a href="#">CNTC</a></li>
+                        <li><a href="#">ACTV</a></li>
+                    </div>
+                </nav>
+            </section>
+        </div>
+    </div>
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="{% static 'components/bootstrap/dist/js/bootstrap.js' %}"></script>
+<script src="{% static 'components/choosen/chosen.jquery.min.js' %}"></script>
+<script src="{% static 'components/bootstrap/js/tab.js' %}"></script>
+<script src="{% static 'js/front.js' %}"></script>
+</html>

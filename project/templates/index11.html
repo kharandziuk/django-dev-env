@@ -1,0 +1,720 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Profile app</title>
+  <link rel="stylesheet" href="{% static 'components/bootstrap/dist/css/bootstrap.css' %}">
+  <link rel="stylesheet" href="{% static 'components/choosen/chosen.css' %}">
+  <link rel="stylesheet" href="{% static 'css/base.css' %}">
+</head>
+<body>
+    <div class="container">
+        <div class="row h-mt-25 h-mb-15">
+            <div class="col-md-7 col-md-offset-3">
+                <div class="h-ml-15 h-mr-15">
+                    <input type="email" class="form-control main-search" id="exampleInputEmail1" placeholder="magic field genie">
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-2 col-md-offset-1">
+                <div class="row h-mb-20">
+                    <ul class="nav nav-tabs sidebar-tabs">
+                        <li><a href="#sets">sets</a></li>
+                        <li><a href="#types">types</a></li>
+                        <li class="active"><a href="#singles">singles</a></li>
+                    </ul>
+                </div>
+                <div class="row h-mb-25">
+                    <div class="tab-content sidebar-table">
+                        <div class="tab-pane" id="sets">
+                            <div class="h-mb-15">
+                                <input class="form-control no-border input-xs" type="text">
+                            </div>
+                            <div class="table h-mb-10">
+                                <div class="table-cell">
+                                    <strong>dimensions</strong>
+                                    <ul>
+                                        <li>height</li>
+                                        <li>length</li>
+                                        <li>width</li>
+                                        <li>depth</li>
+                                    </ul>
+                                </div>
+                                <div class="table-cell">
+                                    <strong>daily value %</strong>
+                                    <ul>
+                                        <li>total fat</li>
+                                        <li>saturated fat</li>
+                                        <li>cholesterol</li>
+                                        <li>sodium</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="table h-mb-10">
+                                <div class="table-cell">
+                                    <strong>dimensions</strong>
+                                    <ul>
+                                        <li>height</li>
+                                        <li>length</li>
+                                        <li>width</li>
+                                        <li>depth</li>
+                                    </ul>
+                                </div>
+                                <div class="table-cell">
+                                    <strong>daily value %</strong>
+                                    <ul>
+                                        <li>total fat</li>
+                                        <li>saturated fat</li>
+                                        <li>cholesterol</li>
+                                        <li>sodium</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="table h-mb-10">
+                                <div class="table-cell">
+                                    <strong>dimensions</strong>
+                                    <ul>
+                                        <li>height</li>
+                                        <li>length</li>
+                                        <li>width</li>
+                                        <li>depth</li>
+                                    </ul>
+                                </div>
+                                <div class="table-cell">
+                                    <strong>daily value %</strong>
+                                    <ul>
+                                        <li>total fat</li>
+                                        <li>saturated fat</li>
+                                        <li>cholesterol</li>
+                                        <li>sodium</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="table h-mb-10">
+                                <div class="table-cell">
+                                    <strong>dimensions</strong>
+                                    <ul>
+                                        <li>height</li>
+                                        <li>length</li>
+                                        <li>width</li>
+                                        <li>depth</li>
+                                    </ul>
+                                </div>
+                                <div class="table-cell">
+                                    <strong>daily value %</strong>
+                                    <ul>
+                                        <li>total fat</li>
+                                        <li>saturated fat</li>
+                                        <li>cholesterol</li>
+                                        <li>sodium</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane" id="types">2</div>
+                        <div class="tab-pane active" id="singles">
+                            <div class="h-mb-10">
+                                <input class="form-control no-border input-sm" type="text" value="width">
+                            </div>
+                            <div class="h-mb-10">
+                                <input class="form-control no-border bg-gray input-sm" type="text" value="width">
+                            </div>
+                            <div class="h-mb-10">
+                                <input class="form-control no-border bg-gray input-sm" type="text" value="width">
+                            </div>
+                            <div class="h-mb-10">
+                                <input class="form-control no-border bg-gray input-sm" type="text" value="width">
+                            </div>
+                            <div class="h-mb-10">
+                                <input class="form-control no-border bg-gray input-sm" type="text" value="width">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-7">
+                <div class="main-content clearfix h-mb-25">
+                    <div class="row h-mb-15">
+                        <div class="col-md-12">
+                            <span class="h-mr-20">GTIN: 00884912105318</span>
+                            <span class="h-mr-20">Manufacturer: POST FOODS</span>
+                            <span class="h-mr-20">Brand: GRAPE-NUTS</span>
+                        </div>
+                    </div>
+                    <div class="row h-mb-25 bb-row">
+                        <div class="col-md-12">
+                            <form class="form-inline row" role="form">
+                                <div class="clearfix h-mb-10">
+                                    <label class="col-md-2 pull-left h-mt-5 h-pr-0 text-right" for="input">GS1 GPC:</label>
+                                    <div class="col-md-3">
+                                        <div class="input-group input-group-xs">
+                                            <span class="input-group-addon bg-white">
+                                                <i class="glyphicon glyphicon-pencil"></i>
+                                            </span>
+                                            <input type="text" class="form-control no-border bg-gray" id="input">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="clearfix h-mb-10">
+                                    <label class="col-md-2 pull-left h-mt-5 h-pr-0 text-right" for="input1">Legacy GPC:</label>
+                                    <div class="col-md-3">
+                                        <div class="input-group input-group-xs">
+                                            <span class="input-group-addon bg-white">
+                                                <i class="glyphicon glyphicon-pencil"></i>
+                                            </span>
+                                            <input type="text" class="form-control no-border bg-gray" id="input1">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="clearfix h-mb-15">
+                                    <label class="col-md-2 pull-left h-mt-5 h-pr-0 text-right" for="input2">WalMart GPC:</label>
+                                    <div class="col-md-3">
+                                        <div class="input-group input-group-xs">
+                                            <span class="input-group-addon bg-white">
+                                                <i class="glyphicon glyphicon-pencil"></i>
+                                            </span>
+                                            <input type="text" class="form-control no-border bg-gray" id="input2">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="clearfix h-mb-15">
+                                    <div class="col-md-6">
+                                        <select class="chosen-select blue-chosen">
+                                            <option value="1">Target Market - Variant - Component</option>
+                                            <option value="2">Variant</option>
+                                            <option value="3">Component</option>
+                                        </select>
+                                    </div>
+                                    <div class="row col-md-3 h-mt-5 pointer text-muted">add profile</div>
+                                </div>
+                                <div class="clearfix">
+                                    <div class="col-md-6">
+                                        <span class="h-mr-20 pointer text-muted-dark">select all</span>
+                                        <span class="h-mr-20 pointer text-muted">deselect all</span>
+                                        <span class="h-mr-20 pointer text-muted">duplicate selected</span>
+                                    </div>
+                                    <div class="col-md-6 text-right">
+                                        <span class="pointer text-muted-dark">import sets</span>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="row h-mb-25 bb-row h-pb-40">
+                        <div class="clearfix">
+                            <div class="col-md-6">
+                                <h3 class="disp-ib">dimensions</h3>
+                                <i class="text-muted h-ml-5">select</i>
+                            </div>
+                            <div class="col-md-6 settings-control active h-mt-20">
+                                <span class="h-ml-15">complete set</span>
+                                <span class="h-ml-15">duplicate set</span>
+                                <span class="h-ml-15">delete set</span>
+                            </div>
+                        </div>
+                        <div class="col-md-4 h-pr-0">
+                           <div class="row h-mt-15">
+                               <div class="col-md-7">
+                                    <label class="h-mb-10">height</label>
+                                    <input type="text" class="form-control no-border bg-gray input-xs" value="12.6">
+                               </div>
+                               <div class="col-md-5 row">
+                                    <div class="clearfix h-mb-15 text-muted-lignt">
+                                        <i class="glyphicon glyphicon-plus pointer pull-left"></i>
+                                        <i class="glyphicon glyphicon-remove pointer pull-right"></i>
+                                    </div>
+                                    <select class="chosen-select gray-chosen">
+                                        <option value="1">in</option>
+                                        <option value="2">out</option>
+                                    </select>
+                               </div>
+                           </div>
+                        </div>
+                        <div class="col-md-4 h-pr-0">
+                           <div class="row h-mt-15">
+                               <div class="col-md-7">
+                                    <label class="h-mb-10">width</label>
+                                    <input type="text" class="form-control no-border bg-gray input-xs" value="7.8">
+                               </div>
+                               <div class="col-md-5 row">
+                                    <div class="clearfix h-mb-15 text-muted-lignt">
+                                        <i class="glyphicon glyphicon-plus pointer pull-left"></i>
+                                        <i class="glyphicon glyphicon-remove pointer pull-right"></i>
+                                    </div>
+                                    <select class="chosen-select gray-chosen">
+                                        <option value="1">in</option>
+                                        <option value="2">out</option>
+                                    </select>
+                               </div>
+                           </div>
+                        </div>
+                        <div class="col-md-4 h-pr-0">
+                           <div class="row h-mt-15">
+                               <div class="col-md-7">
+                                    <label class="h-mb-10">depth</label>
+                                    <input type="text" class="form-control no-border bg-gray input-xs" value="3.8">
+                               </div>
+                               <div class="col-md-5 row">
+                                    <div class="clearfix h-mb-15 text-muted-lignt">
+                                        <i class="glyphicon glyphicon-plus pointer pull-left"></i>
+                                        <i class="glyphicon glyphicon-remove pointer pull-right"></i>
+                                    </div>
+                                    <select class="chosen-select gray-chosen">
+                                        <option value="1">in</option>
+                                        <option value="2">out</option>
+                                    </select>
+                               </div>
+                           </div>
+                        </div>
+                    </div>
+                    <div class="row h-mb-25 bb-row h-pb-40">
+                        <div class="clearfix">
+                            <div class="col-md-6">
+                                <h3 class="disp-ib">fat claims</h3>
+                                <i class="text-muted h-ml-5">select</i>
+                            </div>
+                            <div class="col-md-6 settings-control h-mt-20">
+                                <span class="h-ml-15">complete set</span>
+                                <span class="h-ml-15">duplicate set</span>
+                                <span class="h-ml-15">delete set</span>
+                            </div>
+                        </div>
+                        <div class="clearfix">
+                          <div class="col-md-4 h-pr-0">
+                             <div class="h-mr-15 h-mt-15">
+                                  <label class="h-mb-10 block option-label">fat free
+                                    <button type="button" title="" class="btn btn-link btn-help text-muted-light btn-sm" data-original-title="<b>Definition</b>: Indicates a packaging claim that the food is free from or contains no eggs.">help</button>
+                                    <button title="" class="btn btn-link btn-example btn-sm">example</button>
+                                    <i class="glyphicon glyphicon-remove pointer pull-right text-muted-lignt"></i></label>
+                                  <input type="text" class="form-control no-border bg-gray input-xs">
+                             </div>
+                          </div>
+                          <div class="col-md-4 h-pr-0">
+                             <div class="h-mr-15 h-mt-15">
+                                  <label class="h-mb-10 block option-label">low saturated fat <i class="glyphicon glyphicon-remove pointer pull-right text-muted-lignt"></i></label>
+                                  <input type="text" class="form-control no-border bg-gray input-xs">
+                             </div>
+                             <div class="h-mr-15 h-mt-5 error-message">Y or N only</div>
+                          </div>
+                          <div class="col-md-4 h-pr-0">
+                             <div class="h-mr-15 h-mt-15">
+                                  <label class="h-mb-10 block option-label">saturated fat free
+                                    <button type="button" title="" class="btn btn-link btn-help text-muted-light btn-sm btn-absolute" data-original-title="<b>Definition</b>: Indicates a packaging claim that the food is free from or contains no eggs.">help</button>
+                                    <i class="glyphicon glyphicon-remove pointer pull-right text-muted-lignt"></i></label>
+                                  <input type="text" class="form-control no-border bg-gray input-xs">
+                             </div>
+                          </div>
+                        </div>
+                        <div class="clearfix">
+                          <div class="col-md-4 h-pr-0">
+                             <div class="h-mr-15 h-mt-15">
+                                  <label class="h-mb-10 block option-label">low fat <i class="glyphicon glyphicon-remove pointer pull-right text-muted-lignt"></i></label>
+                                  <input type="text" class="form-control no-border bg-gray input-xs">
+                             </div>
+                          </div>
+                        </div>
+                    </div>
+                    <div class="row h-mb-25 bb-row h-pb-40">
+                        <div class="clearfix">
+                            <div class="col-md-6">
+                                <h3 class="disp-ib">fat claims</h3>
+                                <i class="text-muted h-ml-5">select</i>
+                            </div>
+                            <div class="col-md-6 settings-control h-mt-20">
+                                <span class="h-ml-15">complete set</span>
+                                <span class="h-ml-15">duplicate set</span>
+                                <span class="h-ml-15">delete set</span>
+                            </div>
+                        </div>
+                        <div class="clearfix">
+                          <div class="col-md-4 h-pr-0">
+                             <div class="h-mr-15 h-mt-15">
+                                  <label class="h-mb-10 block option-label">fat free
+                                    <button type="button" title="" class="btn btn-link btn-help text-muted-light btn-sm" data-original-title="<b>Definition</b>: Indicates a packaging claim that the food is free from or contains no eggs.">help</button>
+                                    <button title="" class="btn btn-link btn-example btn-sm">example</button>
+                                    <i class="glyphicon glyphicon-remove pointer pull-right text-muted-lignt"></i></label>
+                                  <input type="text" class="form-control no-border bg-gray input-xs">
+                             </div>
+                          </div>
+                          <div class="col-md-4 h-pr-0">
+                             <div class="h-mr-15 h-mt-15">
+                                  <label class="h-mb-10 block option-label">low saturated fat <i class="glyphicon glyphicon-remove pointer pull-right text-muted-lignt"></i></label>
+                                  <input type="text" class="form-control no-border bg-gray input-xs">
+                             </div>
+                             <div class="h-mr-15 h-mt-5 error-message">Y or N only</div>
+                          </div>
+                          <div class="col-md-4 h-pr-0">
+                             <div class="h-mr-15 h-mt-15">
+                                  <label class="h-mb-10 block option-label">saturated fat free
+                                    <button type="button" title="" class="btn btn-link btn-help text-muted-light btn-sm btn-absolute" data-original-title="<b>Definition</b>: Indicates a packaging claim that the food is free from or contains no eggs.">help</button>
+                                    <i class="glyphicon glyphicon-remove pointer pull-right text-muted-lignt"></i></label>
+                                  <input type="text" class="form-control no-border bg-gray input-xs">
+                             </div>
+                          </div>
+                        </div>
+                        <div class="clearfix">
+                          <div class="col-md-4 h-pr-0">
+                             <div class="h-mr-15 h-mt-15">
+                                  <label class="h-mb-10 block option-label">low fat <i class="glyphicon glyphicon-remove pointer pull-right text-muted-lignt"></i></label>
+                                  <input type="text" class="form-control no-border bg-gray input-xs">
+                             </div>
+                          </div>
+                        </div>
+                    </div>
+                    <div class="row h-mb-25 bb-row h-pb-40 clearfix">
+                        <div class="clearfix">
+                            <div class="col-md-6">
+                                <h3 class="disp-ib">ingredients</h3>
+                                <i class="text-muted h-ml-5">select</i>
+                            </div>
+                            <div class="col-md-6 settings-control h-mt-20">
+                                <span class="h-ml-15">duplicate set</span>
+                                <span class="h-ml-15">delete set</span>
+                            </div>
+                        </div>
+                        <div class="col-md-12 h-mt-15">
+                          <ul class="list-inline">
+                            <li>ingredients</li>
+                            <li class="text-muted pointer">duplicate</li>
+                            <li class="text-muted pointer">inspect</li>
+                            <li class="text-muted pointer">rich text</li>
+                          </ul>
+                        </div>
+                        <div class="col-md-12 clearfix">
+                          <div class="list-tab-content">
+                            <div contenteditable="true" class="textarea no-border bg-gray textarea-default">Whole Grain Wheat Flour, Malted Barley Flour, Isolated Soy Protein, Salt, Whole Grain Barley Flour, Malt Extract, Dried Yeast. Vitamins and Minerals: Reduced Iron, Niacinamide, Zinc Oxide <em>@(source of Zinc)</em>, Vitamin B6, Thiamin Mononitrate <em>@(Vitamin B1)</em>, Organic Wh</div>
+                          </div>
+                        </div>
+                    </div>
+                    <div class="row h-mb-10">
+                        <div class="col-md-3 h-pr-30">
+                            <button type="button" class="btn btn-gray btn-small btn-block">save</button>
+                        </div>
+
+                        <!-- List to choose another profile start -->
+                        <div class="col-md-2 h-pl-0 pull-right">
+                          <div class="page-paginator">
+                            <span class="arrow-left-big"></span>
+                            <span class="menu-list-icon"></span>
+                            <span class="arrow-right-big"></span>
+                          </div>
+                        </div>
+                        <!-- List to choose another profile end -->
+
+                    </div>
+                </div>
+            </div>
+            <section class="col-md-1 row-left">
+                <nav class="right-sidebar-nav">
+                    <div class="right-sidebar-menu">
+                        <li><a href="#">dimn</a></li>
+                        <li><a href="#">fatc</a></li>
+                        <li><a href="#">glut</a></li>
+                        <li><a href="#">dtry</a></li>
+                        <li><a href="#">accr</a></li>
+                        <li><a href="#">LEGL</a></li>
+                        <li><a href="#">POST</a></li>
+                        <li><a href="#">NUTR</a></li>
+                        <li><a href="#">INGR</a></li>
+                        <li><a href="#">IMARK</a></li>
+                        <li><a href="#">CNTC</a></li>
+                        <li><a href="#">ACTV</a></li>
+                    </div>
+                </nav>
+            </section>
+        </div>
+        <div class="main-popup body-popup">
+            <button class="btn btn-close-popup">close</button>
+            <div class="container">
+                <div class="col-md-7 col-md-offset-3">
+                    <div class="row">
+                        <div class="col-md-12 h-mb-10">
+                            <div class="col-md-12 body-popup-title font-ligth">import sets</div>
+                        </div>
+                        <div class="col-md-12 import-sets">
+                          <div class="col-md-12 h-mb-25">
+                              <ul class="import-sets-tabs">
+                                <li class="active">from this GTIN</li>
+                                <li>from GTIN in this group</li>
+                                <li>from other GTIN</li>
+                              </ul>
+                          </div>
+                          <div class="col-md-12">
+                            <table class="component-table h-mb-25">
+                                <tr>
+                                  <td><i>us</i></td>
+                                  <td><span>summer</span></td>
+                                  <td><span>beer1</span></td>
+                                  <td><span>beer2</span></td>
+                                  <td><span>beer3</span></td>
+                                  <td><span>beer4</span></td>
+                                  <td><span>beer5</span></td>
+                                  <td><span>beer6</span></td>
+                                </tr>
+                                <tr>
+                                  <td><i>fr</i></td>
+                                  <td><span>summer</span></td>
+                                  <td><span>beer1</span></td>
+                                  <td><span>beer2</span></td>
+                                  <td><span class="active">beer3</span></td>
+                                  <td><span>beer4</span></td>
+                                  <td><span>beer5</span></td>
+                                  <td><span>beer6</span></td>
+                                </tr>
+                                <tr>
+                                  <td><i>us</i></td>
+                                  <td><span>fall</span></td>
+                                  <td><span>beer1</span></td>
+                                  <td><span>beer2</span></td>
+                                  <td><span>beer3</span></td>
+                                  <td><span>beer4</span></td>
+                                  <td><span>beer5</span></td>
+                                  <td><span>beer6</span></td>
+                                </tr>
+                                <tr>
+                                  <td><i>fr</i></td>
+                                  <td><span>fall</span></td>
+                                  <td><span>beer1</span></td>
+                                  <td><span>beer2</span></td>
+                                  <td><span>beer3</span></td>
+                                  <td><span>beer4</span></td>
+                                  <td><span>beer5</span></td>
+                                  <td><span>beer6</span></td>
+                                </tr>
+                            </table>
+                          </div>
+                          <div class="col-md-12 import-sets_select h-mt-15 h-pr-0">
+                            <span>select all</span>
+                            <span class="dark">deselect all</span>
+                            <ul class="clearfix h-mt-10">
+                              <li>
+                                <label>
+                                  <input type="checkbox">
+                                  fonotrdy &amp; beverage instructions
+                                </label>
+                              </li>
+                              <li>
+                                <label>
+                                  <input type="checkbox">
+                                  fonotrdy &amp; beverage instructions
+                                </label>
+                              </li>
+                              <li>
+                                <label>
+                                  <input type="checkbox">
+                                  fonotrdy &amp; beverage instructions
+                                </label>
+                              </li>
+                              <li>
+                                <label>
+                                  <input type="checkbox">
+                                  fonotrdy &amp; beverage instructions
+                                </label>
+                              </li>
+                              <li>
+                                <label>
+                                  <input type="checkbox">
+                                  fonotrdy &amp; beverage instructions
+                                </label>
+                              </li>
+                              <li>
+                                <label>
+                                  <input type="checkbox">
+                                  fonotrdy &amp; beverage instructions
+                                </label>
+                              </li>
+                              <li>
+                                <label>
+                                  <input type="checkbox">
+                                  fonotrdy &amp; beverage instructions
+                                </label>
+                              </li>
+                              <li>
+                                <label>
+                                  <input type="checkbox">
+                                  fonotrdy &amp; beverage instructions
+                                </label>
+                              </li>
+                              <li>
+                                <label>
+                                  <input type="checkbox">
+                                  fonotrdy &amp; beverage instructions
+                                </label>
+                              </li>
+                            </ul>
+                            <button type="submit" class="btn btn-alert btn-sm-mod h-mb-35">import selected sets</button>
+                          </div>
+                          <div class="col-md-12 h-mt-25">
+                              <ul class="import-sets-tabs">
+                                <li>from this GTIN</li>
+                                <li class="active">from GTIN in this group
+                                    <ul class="import-sets_dropdown">
+                                      <li>00786150000717</li>
+                                      <li>00786150000717</li>
+                                      <li>00786150000717</li>
+                                      <li>00786150000717</li>
+                                      <li>00786150000717</li>
+                                      <li>00786150000717</li>
+                                    </ul>
+                                </li>
+                                <li>from other GTIN</li>
+                              </ul>
+                          </div>
+                          <div class="col-md-12">
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                            <div class="row">
+                              <div class="col-md-5">
+                                <p class="h-mt-25">00786150000717</p>
+                                <p>Hoegaarden 11.2 Oz 4-6 Pk Beer 
+                                  country </p>
+                                <p>Mfr: ANHEUSER-BUSCH, INC.</p>
+                                <p>Brand: HOEGAARDEN </p>
+                              </div>
+                              <div class="col-md-7">
+                                <table class="component-table h-mb-25">
+                                    <tr>
+                                      <td><i>us</i></td>
+                                      <td><span>summer</span></td>
+                                      <td><span>beer1</span></td>
+                                      <td><span>beer2</span></td>
+                                      <td><span>beer3</span></td>
+                                      <td><span>beer4</span></td>
+                                      <td><span>beer5</span></td>
+                                      <td><span>beer6</span></td>
+                                    </tr>
+                                    <tr>
+                                      <td><i>fr</i></td>
+                                      <td><span>summer</span></td>
+                                      <td><span>beer1</span></td>
+                                      <td><span>beer2</span></td>
+                                      <td><span class="active">beer3</span></td>
+                                      <td><span>beer4</span></td>
+                                      <td><span>beer5</span></td>
+                                      <td><span>beer6</span></td>
+                                    </tr>
+                                    <tr>
+                                      <td><i>us</i></td>
+                                      <td><span>fall</span></td>
+                                      <td><span>beer1</span></td>
+                                      <td><span>beer2</span></td>
+                                      <td><span>beer3</span></td>
+                                      <td><span>beer4</span></td>
+                                      <td><span>beer5</span></td>
+                                      <td><span>beer6</span></td>
+                                    </tr>
+                                    <tr>
+                                      <td><i>fr</i></td>
+                                      <td><span>fall</span></td>
+                                      <td><span>beer1</span></td>
+                                      <td><span>beer2</span></td>
+                                      <td><span>beer3</span></td>
+                                      <td><span>beer4</span></td>
+                                      <td><span>beer5</span></td>
+                                      <td><span>beer6</span></td>
+                                    </tr>
+                                </table>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-md-12 h-mt-25">
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                              <ul class="import-sets-tabs">
+                                <li>from this GTIN</li>
+                                <li>from GTIN in this group</li>
+                                <li class="active">from other GTIN</li>
+                              </ul>
+                          </div>
+                          <div class="col-md-12">
+                            <div class="row">
+                              <div class="col-md-5 h-mt-15">
+                                <form action="#" class="import-sets_search">
+                                  <input type="text" class="form-control no-border" value="00786150000351">
+                                  <input type="submit" class="btn btn-gray" value="search"> 
+                                </form>
+                                <br>
+                                <br>
+                                <p>GTIN not found</p>
+                              </div>
+                              <div class="col-md-7 h-mt-35">
+                                <table class="component-table h-mb-25 h-mt-10">
+                                    <tr>
+                                      <td><i>us</i></td>
+                                      <td><span>summer</span></td>
+                                      <td><span>beer1</span></td>
+                                      <td><span>beer2</span></td>
+                                      <td><span>beer3</span></td>
+                                      <td><span>beer4</span></td>
+                                      <td><span>beer5</span></td>
+                                      <td><span>beer6</span></td>
+                                    </tr>
+                                    <tr>
+                                      <td><i>fr</i></td>
+                                      <td><span>summer</span></td>
+                                      <td><span>beer1</span></td>
+                                      <td><span>beer2</span></td>
+                                      <td><span class="active">beer3</span></td>
+                                      <td><span>beer4</span></td>
+                                      <td><span>beer5</span></td>
+                                      <td><span>beer6</span></td>
+                                    </tr>
+                                    <tr>
+                                      <td><i>us</i></td>
+                                      <td><span>fall</span></td>
+                                      <td><span>beer1</span></td>
+                                      <td><span>beer2</span></td>
+                                      <td><span>beer3</span></td>
+                                      <td><span>beer4</span></td>
+                                      <td><span>beer5</span></td>
+                                      <td><span>beer6</span></td>
+                                    </tr>
+                                    <tr>
+                                      <td><i>fr</i></td>
+                                      <td><span>fall</span></td>
+                                      <td><span>beer1</span></td>
+                                      <td><span>beer2</span></td>
+                                      <td><span>beer3</span></td>
+                                      <td><span>beer4</span></td>
+                                      <td><span>beer5</span></td>
+                                      <td><span>beer6</span></td>
+                                    </tr>
+                                </table>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="{% static 'components/bootstrap/dist/js/bootstrap.js' %}"></script>
+<script src="{% static 'components/choosen/chosen.jquery.min.js' %}"></script>
+<script src="{% static 'components/bootstrap/js/tab.js' %}"></script>
+<script src="{% static 'js/front.js' %}"></script>
+</html>

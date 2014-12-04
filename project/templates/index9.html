@@ -1,0 +1,327 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Profile app</title>
+  <link rel="stylesheet" href="{% static 'components/bootstrap/dist/css/bootstrap.css' %}">
+  <link rel="stylesheet" href="{% static 'components/choosen/chosen.css' %}">
+  <link rel="stylesheet" href="{% static 'css/base.css' %}">
+</head>
+<body>
+    <div class="container">
+        <div class="row h-mt-25 h-mb-15">
+            <div class="col-md-7 col-md-offset-3">
+                <div class="h-ml-15 h-mr-15">
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-2 col-md-offset-1">
+            </div>
+            <div class="col-md-7">
+                <div class="main-content clearfix h-mb-25">
+                    
+                    <div class="row h-mb-25 bb-row h-pb-40">
+                        <div class="clearfix">
+                            <div class="col-md-6">
+                                <h3 class="disp-ib">fat claims</h3>
+                                <i class="text-muted h-ml-5">select</i>
+                            </div>
+                            <div class="col-md-6 settings-control h-mt-20">
+                                <span class="h-ml-15 text-muted">duplicate set</span>
+                                <span class="h-ml-15 text-muted">delete set</span>
+                            </div>
+                        </div>
+                        <div class="clearfix">
+                            <div class="col-md-12 h-mb-10">
+                                <span>intake reference description</span>
+                                <b class="fz-small text-muted">125</b>
+                            </div>
+                        </div>
+                        <div class="clearfix">
+                            <div class="col-md-12 h-mb-25">
+                                <textarea class="textarea form-control no-border bg-gray" cols="30" rows="4">￼Percent Daily Values based on a 2,000 calorie diet. Your daily values may be higher or lower depending on your calorie needs.</textarea>
+                            </div>
+                        </div>
+                        <div class="tabs-page-wrap clearfix">
+                            <div class="col-md-12">
+                                <ul class="tabs-page clearfix h-mb-35">
+                                    <li class="active">nfp1</li>
+                                    <li>nfp2</li>
+                                </ul>
+                                <div class="tab-container">
+                                    <div class="tab-container-section h-mb-15 h-pb-25">
+                                        <div class="row">
+                                            <div class="col-md-4">
+                                                <label class="h-mb-10">nfp preparation state</label>
+                                                <select class="chosen-select gray-chosen">
+                                                    <option value="1">unprepared</option>
+                                                    <option value="2">out</option>
+                                                </select>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <label>
+                                                    <input type="checkbox">
+                                                    child nfp
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tab-container-section h-mb-10 h-pb-25">
+                                        <div class="row">
+                                            <div class="col-md-4">
+                                                <label class="h-mb-10">serving size description</label>
+                                                <textarea class="textarea form-control no-border bg-gray" cols="30" rows="2">1/2 cup (58g)</textarea>
+                                            </div>
+                                            <div class="col-md-8 h-pl-0 h-pr-0 connection clearfix">
+                                                <div class="col-md-6">
+                                                    <div class="row">
+                                                        <div class="col-md-7">
+                                                            <label class="h-mb-10">serving size</label>
+                                                            <input type="text" class="form-control no-border bg-gray input-xs" value="58">
+                                                        </div>
+                                                        <div class="col-md-5 h-pl-0">
+                                                            <label class="h-mb-10"><i class="glyphicon glyphicon-plus text-muted-light"></i><i class="glyphicon glyphicon-minus text-muted-light"></i></label>
+                                                            <select class="chosen-select gray-chosen">
+                                                                <option value="1">g</option>
+                                                                <option value="2">kg</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="row">
+                                                        <div class="col-md-7">
+                                                            <label class="h-mb-10">serving size</label>
+                                                            <input type="text" class="form-control no-border bg-gray input-xs" value=".5">
+                                                        </div>
+                                                        <div class="col-md-5 h-pl-0">
+                                                            <label class="h-mb-10"><i class="glyphicon glyphicon-plus text-muted-light"></i><i class="glyphicon glyphicon-minus text-muted-light"></i></label>
+                                                            <select class="chosen-select gray-chosen">
+                                                                <option value="1">cups</option>
+                                                                <option value="2">kg</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                          <div class="row h-mb-25 connection">
+                                            <div class="col-md-4">
+                                                <div class="row">
+                                                    <div class="col-md-7">
+                                                        <label class="h-mb-10">serving size</label>
+                                                        <input type="text" class="form-control no-border bg-gray input-xs" value=".5">
+                                                    </div>
+                                                    <div class="col-md-5 h-pl-0">
+                                                        <label class="h-mb-10"><i class="glyphicon glyphicon-plus text-muted-light"></i><i class="glyphicon glyphicon-minus text-muted-light"></i></label>
+                                                        <select class="chosen-select gray-chosen">
+                                                            <option value="1">cups</option>
+                                                            <option value="2">kg</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <div class="row">
+                                                    <div class="col-md-7">
+                                                        <label class="h-mb-10">serving size</label>
+                                                        <input type="text" class="form-control no-border bg-gray input-xs" value=".5">
+                                                    </div>
+                                                    <div class="col-md-5 h-pl-0">
+                                                        <label class="h-mb-10"><i class="glyphicon glyphicon-plus text-muted-light"></i><i class="glyphicon glyphicon-minus text-muted-light"></i></label>
+                                                        <select class="chosen-select gray-chosen">
+                                                            <option value="1">cups</option>
+                                                            <option value="2">kg</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <div class="row">
+                                                    <div class="col-md-7">
+                                                        <label class="h-mb-10">serving size</label>
+                                                        <input type="text" class="form-control no-border bg-gray input-xs" value=".5">
+                                                    </div>
+                                                    <div class="col-md-5 h-pl-0">
+                                                        <label class="h-mb-10"><i class="glyphicon glyphicon-plus text-muted-light"></i><i class="glyphicon glyphicon-minus text-muted-light"></i></label>
+                                                        <select class="chosen-select gray-chosen">
+                                                            <option value="1">cups</option>
+                                                            <option value="2">kg</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <div class="row">
+                                                    <div class="col-md-7">
+                                                        <label class="h-mb-10">serving size</label>
+                                                        <input type="text" class="form-control no-border bg-gray input-xs" value=".5">
+                                                    </div>
+                                                    <div class="col-md-5 h-pl-0">
+                                                        <label class="h-mb-10"><i class="glyphicon glyphicon-plus text-muted-light"></i><i class="glyphicon glyphicon-minus text-muted-light"></i></label>
+                                                        <select class="chosen-select gray-chosen">
+                                                            <option value="1">cups</option>
+                                                            <option value="2">kg</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                          </div>
+                                          <div class="row h-mb-25 connection">
+                                            <div class="col-md-4">
+                                                <div class="row">
+                                                    <div class="col-md-7">
+                                                        <label class="h-mb-10">serving size</label>
+                                                        <input type="text" class="form-control no-border bg-gray input-xs" value=".5">
+                                                    </div>
+                                                    <div class="col-md-5 h-pl-0">
+                                                        <label class="h-mb-10"><i class="glyphicon glyphicon-plus text-muted-light"></i><i class="glyphicon glyphicon-minus text-muted-light"></i></label>
+                                                        <select class="chosen-select gray-chosen">
+                                                            <option value="1">cups</option>
+                                                            <option value="2">kg</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <div class="row">
+                                                    <div class="col-md-7">
+                                                        <label class="h-mb-10">serving size</label>
+                                                        <input type="text" class="form-control no-border bg-gray input-xs" value=".5">
+                                                    </div>
+                                                    <div class="col-md-5 h-pl-0">
+                                                        <label class="h-mb-10"><i class="glyphicon glyphicon-plus text-muted-light"></i><i class="glyphicon glyphicon-minus text-muted-light"></i></label>
+                                                        <select class="chosen-select gray-chosen">
+                                                            <option value="1">cups</option>
+                                                            <option value="2">kg</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                          </div>
+                                          <div class="row h-mb-25">
+                                            <div class="col-md-4">
+                                              <div class="row">
+                                                <div class="col-md-7">
+                                                  <label class="h-mb-10">serving size</label>
+                                                  <input type="text" class="form-control no-border bg-gray input-xs" value=".5">
+                                                </div>
+                                                <div class="col-md-5 h-pl-0">
+                                                  <label class="h-mb-10"><i class="glyphicon glyphicon-plus text-muted-light"></i><i class="glyphicon glyphicon-minus text-muted-light"></i></label>
+                                                  <select class="chosen-select gray-chosen">
+                                                    <option value="1">cups</option>
+                                                    <option value="2">kg</option>
+                                                  </select>
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        <div class="row h-mb-25">
+                                            <div class="col-md-4 disable">
+                                                <div class="row">
+                                                    <div class="col-md-7">
+                                                        <label class="h-mb-10" title="nutrient basis quantity">nutrient basis quantity</label>
+                                                        <input type="text" class="form-control no-border bg-gray input-xs">
+                                                    </div>
+                                                    <div class="col-md-5 h-pl-0">
+                                                        <label class="h-mb-10"><i class="glyphicon glyphicon-plus text-muted-light"></i><i class="glyphicon glyphicon-minus text-muted-light"></i></label>
+                                                        <select class="chosen-select gray-chosen">
+                                                            <option value="1"></option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <label class="h-mb-10" title="nutrient basis quantity">number of servings</label>
+                                                <input type="text" class="form-control no-border bg-gray input-xs" value="31">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tab-container-section h-mb-10 h-pb-25">
+                                        <div class="row">
+                                            <div class="col-md-12 h-mb-10">
+                                                <h5>total fat</h5>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-4">
+                                                <label class="h-mb-10">nfp preparation state</label>
+                                                <select class="chosen-select gray-chosen">
+                                                    <option value="1">unprepared</option>
+                                                    <option value="2">out</option>
+                                                </select>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <div class="row">
+                                                    <div class="col-md-7">
+                                                        <label class="h-mb-10">nutrient quantity</label>
+                                                        <input type="text" class="form-control no-border bg-gray input-xs" value="1">
+                                                    </div>
+                                                    <div class="col-md-5 h-pl-0">
+                                                        <label class="h-mb-10"><i class="glyphicon glyphicon-plus text-muted-light"></i></label>
+                                                        <select class="chosen-select gray-chosen">
+                                                            <option value="1">g</option>
+                                                            <option value="2">kg</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <label class="h-mb-10">daily value percent</label>
+                                                <input type="text" class="form-control no-border bg-gray input-xs" value="2">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tab-container-section h-mb-10 h-pb-25">
+                                        <div class="row">
+                                            <div class="col-md-12 h-mb-10">
+                                                <h5>total fat</h5>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-4">
+                                                <label class="h-mb-10">nfp preparation state</label>
+                                                <select class="chosen-select gray-chosen">
+                                                    <option value="1">unprepared</option>
+                                                    <option value="2">out</option>
+                                                </select>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <div class="row">
+                                                    <div class="col-md-7">
+                                                        <label class="h-mb-10">nutrient quantity</label>
+                                                        <input type="text" class="form-control no-border bg-gray input-xs" value="1">
+                                                    </div>
+                                                    <div class="col-md-5 h-pl-0">
+                                                        <label class="h-mb-10"><i class="glyphicon glyphicon-plus text-muted-light"></i></label>
+                                                        <select class="chosen-select gray-chosen">
+                                                            <option value="1">g</option>
+                                                            <option value="2">kg</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <label class="h-mb-10">daily value percent</label>
+                                                <input type="text" class="form-control no-border bg-gray input-xs" value="2">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="{% static 'components/bootstrap/dist/js/bootstrap.js' %}"></script>
+<script src="{% static 'components/choosen/chosen.jquery.min.js' %}"></script>
+<script src="{% static 'components/bootstrap/js/tab.js' %}"></script>
+<script src="{% static 'js/front.js' %}"></script>
+</html>

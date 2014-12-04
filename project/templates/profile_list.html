@@ -1,0 +1,36 @@
+<h1>Profiles</h1>
+<form action="{% url 'profile-list' %}" method="post" id="multipleForm">
+  <input type="hidden" name="command" value="multiple">
+  <ul>
+  {% for profile in object_list %}
+    <li>
+    <a href="{% url 'index' %}#{{profile.id}}">profile #{{profile.id}}</a>
+    <a href="{% url 'profile' profile.id %}">json</a>
+    <input type="checkbox"
+      name="profiles"
+      value="{{profile.id}}">
+    </li>
+  {% endfor %}
+  </ul>
+  <input type="submit" value="choose multiple">
+</form>
+<form action="{% url 'profile-list' %}" method="post">
+    <input type="hidden" name="command" value="new">
+    <input id="btn-create" type="submit" value="add new profile">
+</form>
+<form action="{% url 'profile-list' %}" method="post">
+    <input type="hidden" name="command" value="clean">
+    <input id="btn-clean-profiles" type="submit" value="clean profiles">
+</form>
+<form action="{% url 'profile-list' %}" method="post">
+    <input type="hidden" name="command" value="load-test-data">
+    <input type="submit" value="load simple test data">
+</form>
+<form action="{% url 'profile-list' %}" method="post">
+    <input type="hidden" name="command" value="load-csv-data">
+    <input type="submit" value="load full test data">
+</form>
+<form action="{% url 'profile-list' %}" method="post">
+    <input type="hidden" name="command" value="load-attributes">
+    <input type="submit" value="load attributes for finer categories">
+</form>

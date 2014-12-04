@@ -1,0 +1,45 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Profile app</title>
+  <link rel="stylesheet" href="{% static 'components/bootstrap/dist/css/bootstrap.css' %}">
+  <link rel="stylesheet" href="{% static 'components/choosen/public/chosen.css' %}">
+  <link rel="stylesheet" href="{% static 'components/jquery.atwho/dist/css/jquery.atwho.css' %}">
+  <link rel="stylesheet" href="{% static 'css/base.css' %}">
+  <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+  <![endif]-->
+</head>
+<body data-profile-url={{ profile_url }}>
+<div class="container">
+
+  <!--- Geniebar -->
+  <div id="genie-region" class="row h-mt-25 h-mb-15">
+  </div>
+
+  <div class="row">
+
+    <!--- Sidebar -->
+    <div id="sidebar-region" class="col-md-2 col-md-offset-1">
+
+    </div>
+
+
+    <div class="col-md-7">
+      <div class="main-content clearfix h-mb-25">
+        <div id="editor" class="m-container"></div>
+        <div id="menu"></div>
+      </div>
+    </div>
+    <div id="setmap-region">
+    </div>
+  </div> <!-- .row -->
+</div> <!-- .container -->
+
+<script data-main="{% static 'js/main.js' %}" src="{% static 'components/requirejs/require.js' %}"></script>
+</body>
+</html>
